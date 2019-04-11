@@ -16,6 +16,7 @@
 <h1> Hola </h1>
   
 <script>
+  const urlParams = new URLSearchParams(window.location.search);
   const personItsFor = urlParams.get('for');
   console.log(personItsFor)
   </script>
