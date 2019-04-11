@@ -15,13 +15,19 @@
 <body>
   <center>
     <h1 id="name"> Hey you! </h1>
+    <hr>
+    <h5 id="from"> Someone want's you to stop whatever you're doing and get to work on what's important, now! </h5>
+    
   
   </center>
   
 <script>
   const urlParams = new URLSearchParams(window.location.search);
   const name = urlParams.get('for');
+  const from = urlParams.get('from');
   document.getElementById('name').innerHTML =`Hey, ${name}!`
+  document.getElementById('from').innerHTML =`${from} Want's you to stop whatever you're doing and get to work on what's important!`
+  d
   
   console.log(name)
   </script>
