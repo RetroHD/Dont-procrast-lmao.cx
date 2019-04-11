@@ -13,11 +13,16 @@
 </head>
 
 <body>
-<h1> Hola </h1>
+  <center>
+    <h1 id="name"> Hey you! </h1>
+  
+  </center>
   
 <script>
   const urlParams = new URLSearchParams(window.location.search);
-  const personItsFor = urlParams.get('for');
-  console.log(personItsFor)
+  const name = urlParams.get('for');
+  document.getElementById('name').innerHTML =`Hey, ${name}!`
+  
+  console.log(name)
   </script>
 </body>
